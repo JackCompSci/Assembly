@@ -1,0 +1,8 @@
+        INP R0,2
+        MOV R1,#0
+START   ADD R1,#1
+        CMP R1,R0
+        BGT END
+        BEQ END
+        BRA START
+END     HLT
