@@ -1,0 +1,6 @@
+        MOV R1,#3
+START   INP R0,2
+        CMP R0,R1
+        BEQ TRUE
+        BRA START
+TRUE    HLT
