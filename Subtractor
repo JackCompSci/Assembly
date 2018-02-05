@@ -1,0 +1,9 @@
+        MOV R0,#0
+        INP R1,2
+        INP R2,2
+LABEL   SUB R1,R2,R1
+        ADD R0,#1
+        CMP R1,R2
+        BGT LABEL
+        BEQ LABEL
+        OUT R1,4
