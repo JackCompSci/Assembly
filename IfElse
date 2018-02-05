@@ -1,0 +1,12 @@
+        INP R0,2
+        MOV R1,#40
+        MOV R2,#1
+        MOV R3,#0
+        CMP R0,R1
+        BGT TRUE
+        BRA FALSE
+        OUT R0,5
+TRUE    OUT R2,5
+        BRA END
+FALSE   OUT R3,5
+END     HLT
