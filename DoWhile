@@ -4,3 +4,4 @@ START   INP R0,2
         BEQ TRUE
         BRA START
 TRUE    HLT
+;Will keep trying input from user until it gets 3
