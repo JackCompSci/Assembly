@@ -1,0 +1,14 @@
+        INP R0,2
+        MOV R1,#0
+        MOV R2,#0
+        MOV R3,#100
+START   ADD R2,#1
+        ADD R1,R0
+        OUT R2,5
+        CMP R2,R3
+        BLT START
+END     HLT
+;R0 = Input from user
+;R1 = Storage for Total
+;R2 = Storage for Counter
+;R3 = Max value for Counter
